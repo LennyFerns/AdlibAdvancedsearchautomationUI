@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="5">
+
+    <listeners>
+        <listener class-name="com.personal.advancedsearch.utilities.ExtentReportManager" />
+    </listeners>
+
+    <test name="Chrome Test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.personal.advancedsearch.testCases.TC01_OpenAdvancedSearchPage"/>
+            <!--<class name="com.personal.advancedsearch.testCases.TC02_basicSearchResults"/>-->
+            <!--<class name="com.personal.advancedsearch.testCases.TC04_advanceSearchResults"/>-->
+            <!--<class name="com.personal.advancedsearch.testCases.TC03_advanceSearchCheckboxTest"/>-->
+            <class name="com.personal.advancedsearch.testCases.TC05_advanceSearchUIValidation"/>
+            <class name="com.personal.advancedsearch.testCases.TC06_AdvancedSearchDataDrivenUI"/>
+        </classes>
+    </test>
+
+    <test name="Firefox Test">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+<!--            <class name="com.personal.advancedsearch.testCases.TC01_OpenAdvancedSearchPage"/>-->
+            <!--<class name="com.personal.advancedsearch.testCases.TC02_basicSearchResults"/>-->
+            <!--<class name="com.personal.advancedsearch.testCases.TC04_advanceSearchResults"/>-->
+            <!--<class name="com.personal.advancedsearch.testCases.TC03_advanceSearchCheckboxTest"/>-->
+<!--            <class name="com.personal.advancedsearch.testCases.TC05_advanceSearchUIValidation"/>-->
+<!--            <class name="com.personal.advancedsearch.testCases.TC06_AdvancedSearchDataDrivenUI"/>-->
+        </classes>
+    </test>
+
+    <test name="Edge Test">
+        <parameter name="browser" value="edge"/>
+        <classes>
+<!--            <class name="com.personal.advancedsearch.testCases.TC01_OpenAdvancedSearchPage"/>-->
+            <!--<class name="com.personal.advancedsearch.testCases.TC02_basicSearchResults"/>-->
+            <!--<class name="com.personal.advancedsearch.testCases.TC04_advanceSearchResults"/>-->
+            <!--<class name="com.personal.advancedsearch.testCases.TC03_advanceSearchCheckboxTest"/>-->
+<!--            <class name="com.personal.advancedsearch.testCases.TC05_advanceSearchUIValidation"/>-->
+<!--            <class name="com.personal.advancedsearch.testCases.TC06_AdvancedSearchDataDrivenUI"/>-->
+        </classes>
+    </test>
+</suite>
